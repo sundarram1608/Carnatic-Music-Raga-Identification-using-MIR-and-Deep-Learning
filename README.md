@@ -35,7 +35,7 @@ For this project, I used both Google Collab & Microsoft Visual Studio for coding
 - helpers.py: Contains all the custom helper functions for the two pipelines Sruthi Identification/ Standardization and Raga Features Extraction. <br>  
 - pipelines.py: Contains the two Custom pipelines mentioned above, organizing all the relevant helper functions in a sequential order within them. <br>  
 - feature_extraction_code.ipynb: This is code file that activates the 2 pipelines and generates the pickle file containing the features. <br>
-- [raga_features_merged_df.pkl:](https://drive.google.com/file/d/1Af-9TPFVyLkXVV13bI5zVM3eQXhqURZB/view?usp=share_link) This dataset contains the essential features of Ragas extracted using the pieplines.
+- [raga_features_merged_df.pkl:](https://drive.google.com/file/d/1Af-9TPFVyLkXVV13bI5zVM3eQXhqURZB/view?usp=share_link) This dataset contains the essential features of Ragas extracted using the pieplines. By default, there is a folder called temp created and this pickle file gets created within it. !!! This is going to be a huge file!!! 
 - eda_code.ipynb: This includes the codes used for the Exploratory Data Analysis and visualizations of Raga Features.
 - model_building.ipynb: This includes the codes used for building the fusion model, model training/ evaluation  and embedding space visualizations.
     ![Fusion Model](fusion_model.jpg)
@@ -44,16 +44,37 @@ For this project, I used both Google Collab & Microsoft Visual Studio for coding
 ## How to use this repository? <br>
 
 In the following section, I have given the details as per the way I have organized and experimented with my codes. <br>
-
+Feature extraction was performed in Visual Studio code while EDA & Model Building was performed in Collab.
+Follow the steps below, to experiment with my code:<br>
 - Fork the repository <br>
 - Clone your forked repo to your local <br>
 ```bash
 git clone https://github.com/sundarram1608/carnatic_music_raga_identification_mir.git
 ```
-- Open terminal and follow the below CLI prompts one by one<br>
+- Download the [Sample dataset](https://drive.google.com/drive/folders/14oVxOAg2Mu-I-rml4iA3Bmp-ABV8P8Nu?usp=sharing) provided, to the same folder as the other code files of this repo.
+- Folder hierarchy as mentioned above is important for codes to execute seamlessly.
+- Open terminal and follow the below CLI prompts one by one to create a virtual environment<br>
 ```bash
 cd “path to directory“
 ```
+```bash
+python3 -m venv myenv
+```
+```bash
+source myenv/bin/activate
+``` 
+```bash
+pip install -r requirements.txt
+```
+- This creates the virtual environment necessary to run the sruthi identification/ standardization & raga feature extraction pipeline in Visual Studio code.
+- If there are compute issues, you could upload the cloned repository to your Google Drive and open the ipynb file with Collab.
+- In collab, select the GPU compute resource (for e.g. L4) and then mount your drive. From then, you are free to run and experiment with the code.
+
+## Credits:
+I thank my mentor Dr. Xiao Hu and all the references and citations I have mentioned below, to enable me with the structured thought process to approach this problem.
+The codes in this repository, sample datasets and structuring solely belongs to the author and mentor. Links to any external references are available as an when leveraged.
 
 ## References:<br>
-[1] Serrà, J., Ganguli, K. K., Sentürk, S., Serra, X., & Gulati, S. (2016). Indian Art Music Raga Recognition Dataset (audio) (1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.7278511
+[1] Serrà, J., Ganguli, K. K., Sentürk, S., Serra, X., & Gulati, S. (2016). Indian Art Music Raga Recognition Dataset (audio) (1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.7278511<br>
+[2] Sridhar, Rajeswari & Geetha, T.V. (2009). Raga Identification of Carnatic music for music Information Retrieval. SHORT PAPER International Journal of Recent Trends in Engineering. 1. [Research Gate](https://www.researchgate.net/publication/228960849_Raga_Identification_of_Carnatic_music_for_music_Information_Retrieval)<br>
+
