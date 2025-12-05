@@ -47,11 +47,12 @@ In the following section, I have given the details as per the way I have organiz
 Feature extraction was performed in Visual Studio code while EDA & Model Building was performed in Collab.
 Follow the steps below, to experiment with my code:<br>
 - Fork the repository <br>
+- Run the following commands in your terminal.<br>
 - Clone your forked repo to your local <br>
 ```bash
 git clone https://github.com/sundarram1608/carnatic_music_raga_identification_mir.git
 ```
-- Download the [Sample dataset](https://drive.google.com/drive/folders/14oVxOAg2Mu-I-rml4iA3Bmp-ABV8P8Nu?usp=sharing) provided, to the same folder as the other code files of this repo.
+- Download the [Sample dataset](https://drive.google.com/drive/folders/14oVxOAg2Mu-I-rml4iA3Bmp-ABV8P8Nu?usp=sharing) provided (dataset folder), to the same folder as the other code files of this repo.
 - Folder hierarchy as mentioned above is important for codes to execute seamlessly.
 - Open terminal and follow the below CLI prompts one by one to create a virtual environment<br>
 ```bash
