@@ -1,0 +1,11 @@
+librosa
+numpy
+scipy
+matplotlib
+scikit-learn
+tensorflow
+keras
+pandas
+openpyxl
+pyarrow
+umap-learn
