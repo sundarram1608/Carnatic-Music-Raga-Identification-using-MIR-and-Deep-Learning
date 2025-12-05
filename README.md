@@ -23,6 +23,19 @@ There are 3 major pipelines in this project:<br>
 ![Architecture](architecture.jpg)
 <br>
 
+
+## Details on files & folders<br>
+**This code repository is organised into following key components:**<br>
+- README.md: The current file you are reading giving an overview of the project.<br>
+- requirements.txt: Contains all the necessary libraries that should be installed in the local environment of Microsoft Visual Studio code. <br>
+- helpers.py: Contains the 
+- pipelines.py:
+- feature_extraction_code.ipynb:
+- eda_code.ipynb:
+- model_building.ipynb:
+- Reports:
+
+
 ## How to use this repository? <br>
 
 For this project, I used both Google Collab & Microsoft Visual Studio for coding. Feature extraction was performed in Visual Studio code while EDA & Model Building was performed in Collab. My observation and recommendation is to build the entire project in Collab to leverage the free student compute it provides for one year.However, this can be built in local IDEs for small datasets for ease of usage and experimentations.<br>
@@ -32,44 +45,12 @@ In the following section, I have given the details as per the way I have organiz
 - Fork the repository <br>
 - Clone your forked repo to your local <br>
 ```bash
-git clone 
+git clone https://github.com/sundarram1608/carnatic_music_raga_identification_mir.git
 ```
 - Open terminal and follow the below CLI prompts one by one<br>
 ```bash
 cd “path to directory“
 ```
-
-**This code repository is organised into following key components:**<br>
-- README.md: The current file you are reading giving an overview of the project.<br>
-- requirements.txt: Contains all the necessary libraries that should be installed in the local environment of Microsoft Visual Studio code. <br>
-	- I recommend using a virtual environemnt for installing the necessary libraries.
-	   
-- code_file.ipynb: This is the python code notebook (Jupyter notebook) that detail the following:<br> 
-	1. Library Import: <br>
-		-> Setting up your Python environment with necessary libraries.<br>
-	2. Data Ingestion: <br>
-		-> Loading the dataset into your workspace.<br>
-	3. Exploratory Data Analysis (EDA): Assessing data quality and characteristics through: <br>
-		-> Overview and statistical summaries.<br>
-   		-> Null value checks.<br>
-   		-> Analysis of class balance.<br>
-   		-> Correlation between features through visualisation plots like heatmap & pair plot for multicollinearity & correlation insights.<br>
-   		-> Histograms for distribution insights.<br>
-   		-> Outlier Analysis.<br>
-	4. Data Preprocessing:<br>
-   		-> Encoding categorical variables.<br>
-   		-> Scaling numerical data to standardise features.<br>
-	5. ML Model Building and Optimization:<br>
-   		-> Splitting data into training and testing sets.<br>
-   		-> Initial model fitting with basic parametric and tree-based models, including cross-validation.<br>
-   		-> Hyper-parameter tuning of the most promising models.<br>
-   		-> Feature importance analysis to refine model inputs.<br>
-   		-> Re-evaluation using only the important features (a reduced feature set).<br>
-   		-> Combining best individual models into an ensemble for improved performance.<br>
-	6. ML Model Recommendation: <br>
-		-> Analysing and comparing model performances to choose the best model for deployment.<br>
-- final_report.pdf: Final Report in PDF format with Introduction, Methods and Materials, Results, Discussion & Conclusion.<br>
-
 
 ## References:<br>
 [1] Serrà, J., Ganguli, K. K., Sentürk, S., Serra, X., & Gulati, S. (2016). Indian Art Music Raga Recognition Dataset (audio) (1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.7278511
