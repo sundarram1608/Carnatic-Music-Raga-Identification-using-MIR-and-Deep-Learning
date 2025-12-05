@@ -16,7 +16,7 @@ The Sample dataset consisits 8 Melakarta Ragas, namely hanumathodi, harikaambhoj
 
 ## Project Structure:<br>
 
-![Methodology]()
+![Methodology](methodology.jpg)
 
 
 
