@@ -14,5 +14,5 @@ The Sample dataset consisits 8 Melakarta Ragas, namely hanumathodi, harikaambhoj
 
 
 
-References:
+## References:<br>
 [1] Serrà, J., Ganguli, K. K., Sentürk, S., Serra, X., & Gulati, S. (2016). Indian Art Music Raga Recognition Dataset (audio) (1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.7278511
