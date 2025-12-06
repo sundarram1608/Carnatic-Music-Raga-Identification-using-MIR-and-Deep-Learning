@@ -60,7 +60,7 @@ def get_sruthi_info_piptrack_argmax(audio_path):
         audio_arrays.append(y)
         sampling_rates.append(sr)   
         
-        # Identifying pitches and their magnitudes (Uses HPS - Harmonic Product Spectrum method)        
+        # Identifying pitches and their magnitudes (Uses STFT - Short Time Fourier Transform Magnitudes and Shortest Peak Detection to identify Pitch Candidate)        
         pitches, magnitudes = librosa.core.piptrack(y=y, sr=sr)
         
         # Get the index of the maximum magnitude
@@ -84,7 +84,7 @@ def get_sruthi_info_piptrack_argmax(audio_path):
     return audio_arrays, sampling_rates, original_sruthi_frequency_hz, original_sruthi_frequency_midi, original_sruthi_note
 
 #-------------------------------------------------------------------------
-#Function to get the original sruthi frequency of the audio files using argmax of magnitudes
+#Function to get the original sruthi frequency of the audio files using pitchclass histogram & Peak Detection
 #-------------------------------------------------------------------------
 def get_sruthi_info_piptrack_pitchclass(audio_path):
     """
@@ -104,7 +104,7 @@ def get_sruthi_info_piptrack_pitchclass(audio_path):
         audio_arrays.append(y)
         sampling_rates.append(sr)   
         
-        # Identifying pitches and their magnitudes (Uses HPS - Harmonic Product Spectrum method)        
+        # Identifying pitches and their magnitudes (Uses STFT - Short Time Fourier Transform Magnitudes and Shortest Peak Detection to identify Pitch Candidate)        
         pitch_values, magnitudes = librosa.core.piptrack(y=y, sr=sr)
         
         # Extract pitch per time frame using max magnitude
